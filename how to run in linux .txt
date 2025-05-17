@@ -1,0 +1,19 @@
+## 📦 Local Setup
+
+These steps keep your system Python untouched by using a **virtual environment**.
+
+### 1  Prerequisites  
+Make sure the venv tools are available:
+
+```bash
+sudo apt update
+sudo apt install -y python3-full python3-venv
+
+python3 -m venv .venv
+
+source .venv/bin/activate
+
+pip install --upgrade pip
+pip install pyrogram==2.0.106 tgcrypto==1.2.5
+
+python main.py
